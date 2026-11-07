@@ -1,0 +1,202 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+.velora {
+  color: #25241f;
+  background: #faf8f4;
+  font-family: "DM Sans", sans-serif;
+}
+
+.navbar {
+  height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9e4dc;
+}
+
+.navbar h2,
+footer h2 {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.navbar div {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #25241f;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 90px 7%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250, 248, 244, 0.96),
+      rgba(250, 248, 244, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600")
+      center/cover;
+}
+
+.small {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8b7764;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.hero h1 i {
+  color: #a17b5b;
+}
+
+.description {
+  max-width: 420px;
+  line-height: 1.8;
+  color: #777168;
+}
+
+.discover-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 25px;
+  background: #292820;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.categories,
+.outfits {
+  padding: 75px 7%;
+}
+
+.categories h2,
+.outfits h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.category-list span {
+  border: 1px solid #ded8ce;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-heading > span {
+  font-size: 12px;
+  color: #8b7764;
+}
+
+.outfit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.outfit-card img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  display: block;
+}
+
+.outfit-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.outfit-info h3 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.outfit-info p {
+  color: #8b7764;
+  font-size: 12px;
+  margin: 0;
+}
+
+.outfit-info strong {
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #eeebe5;
+}
+
+footer p {
+  font-size: 13px;
+  color: #777168;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .navbar div {
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+
+  .hero {
+    padding: 65px 5%;
+  }
+
+  .categories,
+  .outfits {
+    padding: 55px 5%;
+  }
+
+  .outfit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outfit-card img {
+    height: 420px;
+  }
+
+  .section-heading > span {
+    display: none;
+  }
+}
