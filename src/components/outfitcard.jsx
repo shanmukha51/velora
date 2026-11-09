@@ -1,0 +1,11 @@
+<OutfitBuilder
+  occasion={builderOccasion}
+  setOccasion={setBuilderOccasion}
+  style={builderStyle}
+  setStyle={setBuilderStyle}
+  generatedOutfit={generatedOutfit}
+  onGenerate={generateOutfit}
+  onFavorite={saveGeneratedOutfit}
+  onDetails={openDetails}
+  favorites={favorites}
+/>
